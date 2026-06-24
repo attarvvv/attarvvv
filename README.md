@@ -18,7 +18,7 @@ Dalam pekerjaan saya, saya menekankan kebersihan komponen, dan praktik yang memb
 
 <br/>
 
-### `// proyek unggulan` (ringkasan & teknik)
+### `// proyek unggulan` 
 
 ## CitizenCare ID
 - Deskripsi: Platform civic‑tech untuk melaporkan masalah. Dirancang supaya kode dapat dibaca dan dipelajari, setiap alur utama diberi komentar dan contoh penggunaan.
