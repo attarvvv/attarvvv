@@ -14,22 +14,22 @@
 
 Saya Attar — web developer dari Jakarta yang tertarik membangun antarmuka yang jelas, mudah dipelajari, dan dapat diakses. Saya menulis kode dengan tujuan dua‑lapis: menyelesaikan masalah pengguna, dan menjadi bahan ajar bagi siapa saja yang ingin belajar arsitektur frontend modern.
 
-Dalam pekerjaan saya, saya menekankan kebersihan komponen, dokumentasi hidup (contoh & stories), dan praktik yang membuat proyek mudah diikuti oleh mahasiswa atau kontributor baru.
+Dalam pekerjaan saya, saya menekankan kebersihan komponen, dan praktik yang membuat proyek mudah diikuti oleh kontributor baru.
 
 <br/>
 
 ### `// proyek unggulan` (ringkasan & teknik)
 
 ## CitizenCare ID
-- Deskripsi: Platform civic‑tech untuk melaporkan masalah komunitas (mis. jalan rusak, kebersihan). Dirancang supaya kode dapat dibaca dan dipelajari — setiap alur utama diberi komentar dan contoh penggunaan.
-- Teknologi utama: Next.js, Supabase (Postgres + Auth + Storage), Tailwind CSS
+- Deskripsi: Platform civic‑tech untuk melaporkan masalah. Dirancang supaya kode dapat dibaca dan dipelajari, setiap alur utama diberi komentar dan contoh penggunaan.
+- Teknologi utama: React, Express.js, MySQL.
 - Fitur penting: autentikasi, unggah foto, pembuatan laporan dengan lokasi, moderasi sederhana, arsitektur fitur yang mudah diikuti.
 
 ---
 
 ## Wavely
 - Deskripsi: Frontend pemutar musik yang terkomponenisasi, fokus pada pengalaman pengguna (micro‑interactions), caching offline ringan, dan performa pemutaran.
-- Teknologi utama: React, TypeScript, Supabase (sebagai backend ringan untuk metadata & storage)
+- Teknologi utama: React, TypeScript, Supabase.
 - Fitur penting: playlist, pemutar yang dapat di‑embed, kontrol keyboard, responsive layout.
 - Demo: https://wavelymusical.netlify.app
 
@@ -40,37 +40,29 @@ Dalam pekerjaan saya, saya menekankan kebersihan komponen, dokumentasi hidup (co
 ```js
 const stack = {
   core: {
-    languages: ["TypeScript", "JavaScript"],
+    languages: ["TypeScript", "JavaScript", "Python", "MySQL"],
     package_manager: "pnpm / npm",
-    monorepo_tooling: null // projects are standalone; replace with turborepo / pnpm-workspace if adopted
   },
   projects: {
     CitizenCareID: {
-      role: "civic‑tech app (frontend + Supabase backend)",
+      role: "Fullstack",
       frontend: ["Next.js", "React", "Tailwind CSS"],
-      backend: ["Supabase (Postgres, Auth, Storage)"],
-      infra: ["Vercel (deploy)", "Supabase (managed Postgres)"],
+      backend: ["Express.js"],
+      infra: ["Vercel"],
       notes: "code organized for learnability: feature folders, documented flows"
     },
     Wavely: {
-      role: "componentized music frontend",
+      role: "Fullstack",
       frontend: ["React", "TypeScript"],
-      audio: ["Web Audio API / howler.js (implementation varies)"],
-      storage: ["Supabase Storage (media)"],
-      infra: ["Netlify (deploy)"],
+      storage: ["Supabase Storage"],
+      infra: ["Netlify, Vercel"],
       notes: "focus on UX, player components, keyboard & accessibility"
     }
   },
   components_and_ui: [
-    "Radix UI / Headless UI (accessibility primitives)",
-    "Design tokens (CSS variables)",
-    "Framer Motion (micro-interactions)"
-  ],
-  dev_and_testing: [
-    "Storybook (component catalog)",
-    "Vitest / Jest (unit)",
-    "Playwright (E2E)",
-    "Visual regression (Chromatic or alternative)"
+    "Radix UI / Headless UI",
+    "Design tokens",
+    "Framer Motion"
   ],
   ci_cd_and_tooling: ["GitHub Actions", "ESLint", "Prettier", "commitlint", "pnpm / npm" ]
 };
