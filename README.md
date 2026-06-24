@@ -6,7 +6,7 @@
 
 <br/>
 
-<img src="./assets/divider.svg" width="100%" alt="" />
+<img src="divider.svg" width="100%" alt="" />
 
 <br/>
 
