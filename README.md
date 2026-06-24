@@ -40,21 +40,21 @@ Dalam pekerjaan saya, saya menekankan kebersihan komponen, dokumentasi hidup (co
 ```js
 const stack = {
   core: {
-    languages: ["TypeScript", "JavaScript (ES2021)"],
+    languages: ["TypeScript", "JavaScript"],
     package_manager: "pnpm / npm",
     monorepo_tooling: null // projects are standalone; replace with turborepo / pnpm-workspace if adopted
   },
   projects: {
     CitizenCareID: {
       role: "civic‑tech app (frontend + Supabase backend)",
-      frontend: ["Next.js (React)", "React 18", "Tailwind CSS"],
+      frontend: ["Next.js", "React", "Tailwind CSS"],
       backend: ["Supabase (Postgres, Auth, Storage)"],
       infra: ["Vercel (deploy)", "Supabase (managed Postgres)"],
       notes: "code organized for learnability: feature folders, documented flows"
     },
     Wavely: {
       role: "componentized music frontend",
-      frontend: ["React 18 + TypeScript"],
+      frontend: ["React", "TypeScript"],
       audio: ["Web Audio API / howler.js (implementation varies)"],
       storage: ["Supabase Storage (media)"],
       infra: ["Netlify (deploy)"],
