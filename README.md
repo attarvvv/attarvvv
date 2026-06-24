@@ -24,7 +24,6 @@ Dalam pekerjaan saya, saya menekankan kebersihan komponen, dokumentasi hidup (co
 - Deskripsi: Platform civic‑tech untuk melaporkan masalah komunitas (mis. jalan rusak, kebersihan). Dirancang supaya kode dapat dibaca dan dipelajari — setiap alur utama diberi komentar dan contoh penggunaan.
 - Teknologi utama: Next.js, Supabase (Postgres + Auth + Storage), Tailwind CSS
 - Fitur penting: autentikasi, unggah foto, pembuatan laporan dengan lokasi, moderasi sederhana, arsitektur fitur yang mudah diikuti.
-- Tautan: [link ke repo]
 
 ---
 
@@ -36,24 +35,48 @@ Dalam pekerjaan saya, saya menekankan kebersihan komponen, dokumentasi hidup (co
 
 <br/>
 
-### `// stack ringkas`
+### `// stack ringkas (project-mapped)`
 
 ```js
 const stack = {
-  languages: ["TypeScript", "JavaScript"],
-  frontend: ["React (komponen fungsional)", "Next.js (App Router atau Pages untuk CitizenCare)", "Vite (untuk library/komponen standalone)"],
-  styling: ["Tailwind CSS", "CSS custom properties (theme tokens)"],
-  ui_primitives: ["Radix UI / Headless UI (aksesibilitas)"],
-  animations: ["framer-motion"],
-  backend_and_db: ["Supabase (Postgres, Auth, Storage)", "Node.js untuk utilitas server-side jika perlu"],
-  testing: ["vitest / jest", "playwright (E2E)"],
-  component_workflow: ["Storybook", "visual regression (Chromatic atau alternatif)"],
-  ci_cd_and_deploy: ["GitHub Actions", "Vercel", "Netlify"],
-  tooling: ["pnpm / npm", "eslint", "prettier", "commitlint"]
+  core: {
+    languages: ["TypeScript", "JavaScript (ES2021)"],
+    package_manager: "pnpm / npm",
+    monorepo_tooling: null // projects are standalone; replace with turborepo / pnpm-workspace if adopted
+  },
+  projects: {
+    CitizenCareID: {
+      role: "civic‑tech app (frontend + Supabase backend)",
+      frontend: ["Next.js (React)", "React 18", "Tailwind CSS"],
+      backend: ["Supabase (Postgres, Auth, Storage)"],
+      infra: ["Vercel (deploy)", "Supabase (managed Postgres)"],
+      notes: "code organized for learnability: feature folders, documented flows"
+    },
+    Wavely: {
+      role: "componentized music frontend",
+      frontend: ["React 18 + TypeScript"],
+      audio: ["Web Audio API / howler.js (implementation varies)"],
+      storage: ["Supabase Storage (media)"],
+      infra: ["Netlify (deploy)"],
+      notes: "focus on UX, player components, keyboard & accessibility"
+    }
+  },
+  components_and_ui: [
+    "Radix UI / Headless UI (accessibility primitives)",
+    "Design tokens (CSS variables)",
+    "Framer Motion (micro-interactions)"
+  ],
+  dev_and_testing: [
+    "Storybook (component catalog)",
+    "Vitest / Jest (unit)",
+    "Playwright (E2E)",
+    "Visual regression (Chromatic or alternative)"
+  ],
+  ci_cd_and_tooling: ["GitHub Actions", "ESLint", "Prettier", "commitlint", "pnpm / npm" ]
 };
 ```
 
-Stack ini merefleksikan pendekatan praktis: fokus pada pengalaman pengguna, komponen yang dapat diuji, dan tooling yang mempermudah kolaborasi serta pembelajaran.
+Stack ini disusun per proyek supaya pembaca bisa langsung melihat teknologi yang relevan untuk tiap produk, plus tooling yang mendukung workflow design‑first dan pengembangan yang mudah diajarkan.
 
 <br/>
 
@@ -61,8 +84,8 @@ Stack ini merefleksikan pendekatan praktis: fokus pada pengalaman pengguna, komp
 
 <p>
   <a href="https://github.com/attarvvv"><img src="https://img.shields.io/badge/GitHub-6366F1?style=flat-square&logo=github&logoColor=white" alt="GitHub"/></a>
-  <a href="mailto:email@example.com"><img src="https://img.shields.io/badge/Email-6366F1?style=flat-square&logo=gmail&logoColor=white" alt="Email"/></a>
-  <a href="https://linkedin.com/in/USERNAME"><img src="https://img.shields.io/badge/LinkedIn-6366F1?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
+  <a href="mailto:attarr.dev@gmail.com"><img src="https://img.shields.io/badge/Email-6366F1?style=flat-square&logo=gmail&logoColor=white" alt="Email"/></a>
+  <a href="https://www.linkedin.com/in/muhammad-attar-67a536263/"><img src="https://img.shields.io/badge/LinkedIn-6366F1?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
 </p>
 
 <br/>
