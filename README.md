@@ -10,71 +10,54 @@
 
 <br/>
 
-### `// new direction`
+### `// tentang saya`
 
-Saya mengubah konsep personal README ini menjadi desain‑pertama (design‑first) dan komponen‑terpusat. Fokus sekarang:
+Saya Attar — web developer dari Jakarta yang tertarik membangun antarmuka yang jelas, mudah dipelajari, dan dapat diakses. Saya menulis kode dengan tujuan dua‑lapis: menyelesaikan masalah pengguna, dan menjadi bahan ajar bagi siapa saja yang ingin belajar arsitektur frontend modern.
 
-- Membangun design system dan perpustakaan komponen yang dapat dipakai kembali (accessible by default).
-- Aplikasi frontend yang performan, progresif, dan dapat diuji (component-driven, storybook/demos, visual regression friendly).
-- Kode yang mudah diajarkan: dokumentasi hidup, contoh penggunaan, dan pola terbaik untuk mahasiswa/pembaca.
+Dalam pekerjaan saya, saya menekankan kebersihan komponen, dokumentasi hidup (contoh & stories), dan praktik yang membuat proyek mudah diikuti oleh mahasiswa atau kontributor baru.
 
 <br/>
 
-### `// signature projects`
+### `// proyek unggulan` (ringkasan & teknik)
 
-**Wavely**
-A modern, componentized music player frontend — fokus pada UX micro‑interactions, offline caching, dan performa. Implemented with React + TypeScript and a component library for players and playlists.
-→ [wavelymusical.netlify.app](https://wavelymusical.netlify.app)
+## CitizenCare ID
+- Deskripsi: Platform civic‑tech untuk melaporkan masalah komunitas (mis. jalan rusak, kebersihan). Dirancang supaya kode dapat dibaca dan dipelajari — setiap alur utama diberi komentar dan contoh penggunaan.
+- Teknologi utama: Next.js, Supabase (Postgres + Auth + Storage), Tailwind CSS
+- Fitur penting: autentikasi, unggah foto, pembuatan laporan dengan lokasi, moderasi sederhana, arsitektur fitur yang mudah diikuti.
+- Tautan: [link ke repo]
 
-**CitizenCare ID**
-A civic‑tech reporting platform designed as a learning artifact: code is structured and commented so students can follow architecture and data flows. Progressive UI, image uploads, and simple moderation flows.
-→ [link to repo]
+---
 
-<br/>
-
-### `// design goals`
-
-- Accessibility first: semantic markup, keyboard support, and screen‑reader friendliness.
-- Component reusability: small, well‑typed building blocks with clear props and stories.
-- Observable UX: visual regression tests, Storybook stories, and lightweight instrumentation for user flows.
-- Teachability: examples, documented tradeoffs, and a "how it works" guide for each major feature.
+## Wavely
+- Deskripsi: Frontend pemutar musik yang terkomponenisasi, fokus pada pengalaman pengguna (micro‑interactions), caching offline ringan, dan performa pemutaran.
+- Teknologi utama: React, TypeScript, Supabase (sebagai backend ringan untuk metadata & storage)
+- Fitur penting: playlist, pemutar yang dapat di‑embed, kontrol keyboard, responsive layout.
+- Demo: https://wavelymusical.netlify.app
 
 <br/>
 
-### `// stack — design + engineering`
+### `// stack ringkas`
 
 ```js
 const stack = {
-  languages: ["typescript", "javascript"],
-  frontend: [
-    "react (function components + hooks)",
-    "next.js (app/router or pages - depending on the project)",
-    "vite (fast local dev for standalone components)"
-  ],
-  styling_and_ui: [
-    "tailwindcss",
-    "radix-ui / headlessui",
-    "stitches / tailwind + utility styles",
-    "framer-motion (micro-interactions)"
-  ],
-  design_system: ["storybook", "css‑variables theming", "design tokens"],
-  backend_and_data: ["supabase (postgres)", "nodejs (server utilities)"],
-  testing_and_quality: ["vitest / jest", "playwright (E2E)", "chromatic / visual tests"],
-  ci_cd: ["github-actions"],
-  deployment: ["vercel", "netlify"],
-  tooling: ["pnpm", "eslint", "prettier", "commitlint"]
+  languages: ["TypeScript", "JavaScript"],
+  frontend: ["React (komponen fungsional)", "Next.js (App Router atau Pages untuk CitizenCare)", "Vite (untuk library/komponen standalone)"],
+  styling: ["Tailwind CSS", "CSS custom properties (theme tokens)"],
+  ui_primitives: ["Radix UI / Headless UI (aksesibilitas)"],
+  animations: ["framer-motion"],
+  backend_and_db: ["Supabase (Postgres, Auth, Storage)", "Node.js untuk utilitas server-side jika perlu"],
+  testing: ["vitest / jest", "playwright (E2E)"],
+  component_workflow: ["Storybook", "visual regression (Chromatic atau alternatif)"],
+  ci_cd_and_deploy: ["GitHub Actions", "Vercel", "Netlify"],
+  tooling: ["pnpm / npm", "eslint", "prettier", "commitlint"]
 };
 ```
 
-Catatan: stack ini dirancang untuk workflow yang berfokus pada design system + aplikasi produksi yang mudah dipelajari.
+Stack ini merefleksikan pendekatan praktis: fokus pada pengalaman pengguna, komponen yang dapat diuji, dan tooling yang mempermudah kolaborasi serta pembelajaran.
 
 <br/>
 
-<img src="./assets/divider.svg" width="100%" alt="" />
-
-<br/>
-
-### `// reach`
+### `// kontak`
 
 <p>
   <a href="https://github.com/attarvvv"><img src="https://img.shields.io/badge/GitHub-6366F1?style=flat-square&logo=github&logoColor=white" alt="GitHub"/></a>
